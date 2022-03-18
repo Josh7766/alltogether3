@@ -1,5 +1,7 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
-    game.over(false)
+    game.over(true)
+    music.playMelody("B D G E G C F - ", 120)
+    effects.confetti.startScreenEffect()
 })
 scene.setBackgroundColor(2)
 let mySprite = sprites.create(img`
