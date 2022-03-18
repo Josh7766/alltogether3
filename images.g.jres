@@ -1,0 +1,17 @@
+{
+    "image1": {
+        "data": "hwQMABAAAAAA8BLyD+BEAAD/EkL+T00A8P8SQuT//wDw/xLy3S4i////EvLdJCL///8SQr30Lw///xJCvSQiD///EvLd9C//8P8S8t0uIv/w/xJC5P//AAD/EkL+T00AAPAS8g/gRAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "player 1"
+    },
+    "image2": {
+        "data": "hwQMABAAAAAA8Bj4D+BEAAD/GEj+T00A8P8YSOT//wDw/xj43Y6I////GPjdhIj///8YSL30jw///xhIvYSID///GPjd9I//8P8Y+N2OiP/w/xhI5P//AAD/GEj+T00AAPAY+A/gRAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "player2"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
