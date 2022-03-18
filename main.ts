@@ -21,7 +21,7 @@ let mySprite = sprites.create(img`
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
-mySprite.setPosition(0, 0)
+mySprite.setPosition(50, 50)
 let mySprite2 = sprites.create(img`
     . . f f f . . . . . . . . f f f 
     . f f c c . . . . . . f c b b c 
