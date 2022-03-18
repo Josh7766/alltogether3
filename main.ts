@@ -166,5 +166,5 @@ let mySprite2 = sprites.create(img`
     . . . f f f f f f f . . . . . . 
     `, SpriteKind.Enemy)
 game.onUpdate(function () {
-    mySprite2.setVelocity(mySprite.vx * -0.85, mySprite.vy * -0.85)
+    mySprite2.setVelocity(mySprite.vx * 0.9, mySprite.vy * 0.9)
 })
