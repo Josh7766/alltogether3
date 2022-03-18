@@ -40,4 +40,4 @@ let mySprite2 = sprites.create(img`
     . . f b b b b b b c f . . . . . 
     . . . f f f f f f f . . . . . . 
     `, SpriteKind.Enemy)
-mySprite2.follow(mySprite, 75)
+mySprite2.follow(mySprite, 45)
