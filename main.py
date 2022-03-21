@@ -1,4 +1,4 @@
-scene.setBackgroundImage(img`
+scene.set_background_image(img("""
     6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
         6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
         6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
@@ -119,14 +119,14 @@ scene.setBackgroundImage(img`
         eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee11eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
         eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee11eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
         eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee11eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-`)
-let redPlayer = sprites.create(assets.image`
+"""))
+redPlayer = sprites.create(assets.image("""
     player 1
-`, SpriteKind.Player)
-let bluePlayer = sprites.create(assets.image`
+"""), SpriteKind.player)
+bluePlayer = sprites.create(assets.image("""
     player2
-`, SpriteKind.Player)
-let hoopLeft = sprites.create(img`
+"""), SpriteKind.player)
+hoopLeft = sprites.create(img("""
         ................................................................................................................................................................
             ................................................................................................................................................................
             ................................................................................................................................................................
@@ -247,8 +247,9 @@ let hoopLeft = sprites.create(img`
             ................................................................................................................................................................
             ................................................................................................................................................................
             ................................................................................................................................................................
-    `, SpriteKind.Player)
-let hoopRight = sprites.create(img`
+    """),
+    SpriteKind.player)
+hoopRight = sprites.create(img("""
         ................................................................................................................................................................
             ................................................................................................................................................................
             ................................................................................................................................................................
@@ -369,5 +370,16 @@ let hoopRight = sprites.create(img`
             ................................................................................................................................................................
             ................................................................................................................................................................
             ................................................................................................................................................................
-    `, SpriteKind.Player)
-hoopRight.setPosition(79, 59)
+    """),
+    SpriteKind.player)
+hoopRight.set_position(79, 59)
+class SpriteKind:
+    Ball = SpriteKind.create()
+def shootBasketball(Strength: number, Direction_: number, Vy: number):
+    physicsBasketball.set_velocity(Strength * Direction_, Vy)
+physicsBasketball: Sprite = None
+physicsBasketball = sprites.create(assets.image("""
+    Basketball
+"""), SpriteKind.player)
+physicsBasketball.set_position(50, 25)
+physicsBasketball.ay = 100

@@ -1,7 +1,8 @@
 {
     "name": "alltogether3",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "physicsBasketball": "pub:44200-49135-24546-88806"
     },
     "files": [
         ".vscode/settings.json",
@@ -15,7 +16,8 @@
         "tilemap.g.jres",
         "tilemap.g.ts",
         "images.g.jres",
-        "images.g.ts"
+        "images.g.ts",
+        "main.py"
     ],
     "targetVersions": {
         "target": "1.8.22",
@@ -24,5 +26,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "pyprj"
 }
